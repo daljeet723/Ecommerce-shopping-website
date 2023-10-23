@@ -1,0 +1,127 @@
+.productsHeading {
+    margin: 2vmax auto;
+    width: 15vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 2vmax;
+    color: rgba(0, 0, 0, 0.678);
+    font: 500 1.5vmax "Roboto";
+    text-align: center;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax 4vmax 8vmax;
+    justify-content: center;
+    min-height: 42vmax;
+  }
+  
+  .paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 6vmax 6vmax 3vmax 6vmax;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0.3vmax;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 5px;
+  }
+  
+  .page-item {
+    padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 16px;
+    line-height: 1.43;
+    font-size: 20px;
+    min-width: 32px;
+    cursor: pointer;
+   
+  }
+  .page-link {
+    text-decoration: none;
+    font: 300 0.7vmax "Roboto";
+    color: rgb(80, 80, 80);
+    transition: all 0.3s;
+  }
+  
+  .page-item:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  
+  .page-item:hover .page-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  .pageItemActive {
+    background-color: tomato;
+  }
+  
+  .pageLinkActive {
+    color: white;
+  }
+  
+  .filterBox {
+    width: 10vmax;
+    position: absolute;
+    top: 15vmax;
+    left: 3vmax;
+    min-height: 35vmax;
+  }
+  .filterBox > .filterPrice{
+    display: flex;
+    justify-content: space-between;
+    font: 400 1vmax "Roboto";
+    color: #7D7C7C;
+  }
+  
+  .filterBox > .filterPrice > div{
+    border: 1px solid #B4B4B3;
+    padding:3px;
+  }
+  .categoryBox {
+    padding: 2vmax 0 0 0 ;
+  }
+  .categoryList{
+    padding: 0%;
+  }
+  
+  .category-link {
+    list-style:none;
+    color: rgba(0, 0, 0, 0.61);
+    font: 400 1vmax "Roboto";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .category-link:hover {
+    color: tomato;
+  }
+  
+  .filterBox > fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+  }
+
+  @media screen and (max-width: 600px) {
+    .filterBox {
+      width: 20vmax;
+      position: static;
+      margin: auto;
+    }
+  
+    .page-link {
+      font: 300 1.7vmax "Roboto";
+    }
+    .category-link {
+      font: 400 1.8vmax "Roboto";
+    }
+  }

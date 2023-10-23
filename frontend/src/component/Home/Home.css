@@ -1,0 +1,219 @@
+.homeContainer{
+  background-color: #2B2B2B;
+  height:100%;
+  width:100%;
+  padding-bottom:1.5vmax;
+}
+.banner{
+  height:35vmax;
+  width:100%;
+  display:inline-flex;
+  align-content: space-between;
+  display: grid;
+  grid-template-columns:3rem 6fr 2fr 15fr 3rem ;
+  background-image: radial-gradient(farthest-corner at 40px 40px,
+    #111 20%, #333 100%,#ddd 100%);
+}
+
+.about{
+  display:grid;
+  grid-column: 2/4;
+  grid-template-rows: 2rem 0.4fr 0.4fr 0.4fr 1rem;
+}
+
+.about > p{
+  display: grid;
+  grid-row: 3/4;
+  color:#D6E4E5;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:1vmax;
+  width:30vmax;
+  text-align: justify;
+  line-height: 2vmax;
+  padding-bottom:1vmax;
+}
+
+.about > h2{
+  display: grid;
+  grid-row: 2/-5;
+  color:#22A39F;
+  font-size:2.4vmax;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom:0;   
+}
+
+.about > h2>  .animate-charcter
+{  
+   /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+    font-size: 2.2vmax;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.about a{
+  grid-row: 4/-3;
+}
+.about >a > button{
+  
+  width:12vmax;
+  height: 4vmax;
+  margin-top:0;
+  border-radius: 3vmax;
+  cursor:pointer;
+  background:transparent;
+  border:0.2vmax solid #22A39F;
+  color:#D6E4E5;
+  font-family:'Franklin Gothic Medium';
+  font-size:1.5vmax;
+  text-align: center;
+  padding:1vmax;
+
+}
+.about> a> button:hover{
+  background:  linear-gradient(
+     -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+     );
+  background-size: 200% auto;
+  -webkit-text-fill-color: #fff;
+  border:0.1vmax solid #111;
+}
+.homeImage{
+  display:grid;
+  grid-column: 4/5;
+  padding-top:1vmax;
+  justify-content: center;
+    
+}
+.homeImage img{
+  padding-top: 3.5vmax;
+  padding-left:4vmax;
+  Width:46vmax;
+  height:28vmax;
+  opacity: 0.3;
+  
+}
+.homeImage p{
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  font-size: 3.4vmax;
+  color:#FFBD69;  
+   
+}
+.homeContainer h4{
+  font-size: 2vmax;
+  color:#9DC6A7;
+  font-family:cursive;  
+  text-align: center;
+  font-weight:200;
+  padding:1.5vmax;
+  
+}
+
+/* PRODUCTS */
+.productContainer{
+  height:60vmax;
+  display: flex;
+  margin:2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* by default flex start from start so jutify center */
+}
+
+.productCard{
+  height:27vmax;
+  width:15vmax;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  color:#D6E4E5;
+  margin-left:2rem;
+  transition: all 0.5s;
+  padding-bottom: 1vmax;
+  opacity: 0.7;
+
+}
+.productCard >img{
+  width:15vmax;
+}
+.productCard > div{
+  margin:0.2vmax;
+  display:flex;
+  justify-content: flex-start;
+}
+.productCard > div > span{
+  margin:0.2vmax;
+  font: 300 1vmax "Roboto";
+  color: #7D7C7C;
+}
+.productCard > span{
+  margin:0.2vmax ;
+  color:tomato;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2vmax;
+}
+.productCard > p{
+  margin:0.8vmax 0.4vmax;
+  margin-bottom: 0;
+  font-family: "Roboto";
+  font-size: 1.3vmax; 
+  color:#111;
+}
+.productCard:hover{
+  box-shadow: 0 0 5px #434242;
+  transform: translateY(-1vmax);
+}
+
+
+@media screen and (max-width:1080px){
+  .homeImage p{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+  }
+  .productContainer{
+    padding:1vmax;
+    height:70vmax;
+  }
+  .productCard{
+    height:32vmax;
+    margin:1vmax 2vmax;
+  }
+  .productCard > p{
+    font-size:1.7vmax;
+  }
+  .productCard > div{
+    margin:0;
+    display: block;
+  }
+  .productCard > span{
+    font-size: 1.5vmax;
+  }
+  .productCard > div> span{
+    margin: 0 0.5vmax;
+    font-size: 300 1vmax "Roboto";
+  }
+
+}
+
